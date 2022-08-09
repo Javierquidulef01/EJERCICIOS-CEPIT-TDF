@@ -15,7 +15,7 @@
         font-weight: bold;
         background-color:  black;
     }
-    #miDiv a > .imgCarousel {
+    #miDiv a > img {
         height: 400px;
         width: 100%;
         opacity: 0.7 !important;
