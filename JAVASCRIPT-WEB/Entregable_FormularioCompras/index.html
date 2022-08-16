@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compras - Entregable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <h1>Compras</h1>
+        </header>
+        <form class="formulario">
+
+            <div class="entradas">
+                <div>
+                    <h3>Producto</h3>
+                    <input type="text" id="producto">
+                </div>
+                <div>
+                    <h3>Precio</h3>
+                    <input type="number" id="precio">
+                </div>
+            </div>
+            
+            <div class="salidas"> 
+                <input id="inputAgregar" type="submit" value="Agregar">
+                <input id="inputTotal" type="submit" value="Calcular total">
+            </div>
+        </form>
+
+        <table class="tabla">
+            <tr>
+                <th>Compra Nro</th>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+            <tr class="filaNula">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+
+        <script src="compras.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+  
+    form.formulario, div.entradas, div.salidas {
+        display: flex;
+        font-size: 1.2rem;
+    
+    }
+
+    form.formulario {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+
+    form.formulario * {
+        margin: 0px;
+        margin-right: 5px;
+    }
+    div.entradas input {
+        margin-bottom: 5px;
+
+    }
+    
+    div.salidas  {
+        align-items: flex-end;
+    }
+
+    div.entradas input, div.salidas input {
+        font-size: 1.2rem;
+    }
+    
+/*----------------------------------------*/
+
+    table.tabla {
+        font-size: 1.3rem;
+    }
+
+    th {
+        width: 200px;
+        background-color: lightsalmon;
+    }
+    
+    tr {
+        text-align: center;
+        background-color: rgb(241, 217, 208);
+    }
