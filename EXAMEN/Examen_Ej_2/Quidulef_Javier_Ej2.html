@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cajasCreadas {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: lightcoral;
+            margin:5px;
+            height:100px;
+            width:100px;
+            line-height: 100px;
+
+        }
+    </style>
+    <title>Examen: Ejericicio-2</title>
+</head>
+<body>
+
+    <form action="">
+        <h3>Ingrese la cantidad de cajas a crear</h3>
+        <input type="number" id="inputNro">
+        <input type="submit" value="Crear" id="botonCrear">
+
+    </form>
+
+    <div class="contenedor">
+
+    </div>
+
+
+    <script>
+        let cantCajas = document.getElementById("inputNro");
+        let btnCrear = document.getElementById("botonCrear");
+        let cajasExistentes = document.getElementsByClassName("cajasCreadas");
+
+        btnCrear.addEventListener("click", (e) => {
+            e.preventDefault();
+            insertarCajas(Number(cantCajas.value));
+        })
+
+        function crearCajas (cant) {
+            let cajas = new Array(cant);
+            for (let i = 0; i < cant; i++) {
+                cajas[i] = document.createElement("div");
+                cajas[i].innerHTML = "Caja " + (i+1);
+                cajas[i].setAttribute("class","cajasCreadas");
+            }
+        
+            return cajas;
+        }
+        function insertarCajas(cantidadCajas) {
+            let divs = crearCajas(cantidadCajas);
+            console.log(divs);
+            let contenedor = document.querySelector(".contenedor");
+
+            for (let i = 0; i < divs.length; i++) {
+                contenedor.appendChild(divs[i]);
+            }
+        }
+
+    </script>
+</body>
+</html>
