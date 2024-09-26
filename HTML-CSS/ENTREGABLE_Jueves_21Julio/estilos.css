@@ -1,145 +1,141 @@
 * {
-    margin:0px;
-    padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-header, nav{
-    font-family: fantasy;
-    font-size: 2em;
-} 
+header,
+nav {
+  font-family: fantasy;
+  font-size: 2em;
+  min-width: 580px;
+}
 
 header {
-    display: flex;
-    height: 70px;
-    line-height: 60px;
-    justify-content: center;
-    background-image: url("https://th.bing.com/th/id/R.019b088768cc18120ebf287d0c8549ce?rik=gCrJTYCgohsVxA&pid=ImgRaw&r=0");
-    background-size: 100% 70px;
-    background-repeat: no-repeat;
+  display: flex;
+  height: 70px;
+  line-height: 60px;
+  justify-content: center;
+  background-image: url("https://th.bing.com/th/id/R.019b088768cc18120ebf287d0c8549ce?rik=gCrJTYCgohsVxA&pid=ImgRaw&r=0");
+  background-size: 100% 70px;
+  background-repeat: no-repeat;
 }
 
 /* ----------------------------------------------------------------------- */
 nav {
-    background-color: rgba(0, 7, 46, 0.945);
+  background-color: rgba(0, 7, 46, 0.945);
 }
 
 nav a {
-    color: aliceblue;
-    text-decoration: none;
+  color: aliceblue;
+  text-decoration: none;
 }
 nav a:hover {
-    color: rgb(111, 217, 243);
+  color: rgb(111, 217, 243);
 }
 
 .lista-ul {
-    display:flex;
-    height: 45px;
-    list-style:none;
-    line-height: 45px;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  height: 45px;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  justify-content: center;
 }
 
 .lista-ul > li {
-    height: auto;
-    width: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-}    
+  height: auto;
+  width: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
 /* ----------------------------------------------------------------------- */
 
 .section1 {
-    background-color: rgb(141, 228, 250);
-    padding: 40px;
-
+  background-color: rgb(141, 228, 250);
+  padding: 40px;
 }
-.section1 h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    font-size: 2em;
-    margin-bottom: 10px;
+.section1 h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 .section1 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
-
 .localizacion {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mapas {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.mapas div{
-    height: 400px;
-    width: 240px;
-    border: 5px solid rgb(13, 13, 104);
-    margin: 3px;
+.mapas div {
+  height: 400px;
+  width: 240px;
+  border: 5px solid rgb(13, 13, 104);
+  margin: 3px;
 }
 .mapas img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #img-centro {
-    align-self: center;
-    width: 400px;
-    height: 400px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+  align-self: center;
+  width: 400px;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
 
 .imagenes {
-    display: flex;
-    padding:1px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  padding: 1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .imagenes div {
-    border: 5px solid rgb(13, 13, 104);
-    border-radius:8px;
-    height: 300px;
-    width: 400px;
-    margin:3px;
-    
+  border: 5px solid rgb(13, 13, 104);
+  border-radius: 8px;
+  height: 300px;
+  width: 400px;
+  margin: 3px;
 }
 
 .imagenes > div > img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /*-------------------------------------------------------------------------*/
 
-
 footer {
-    background-color: rgb(161, 225, 241);
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top:3px solid rgb(13, 13, 104);
+  background-color: rgb(161, 225, 241);
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgb(13, 13, 104);
 }
 
 footer a {
-    background-color: rgb(13, 13, 104);
-    font-size: 23px;
-    font-family: fantasy;
-    color: whitesmoke;
-    padding: 15px 25px;
+  background-color: rgb(13, 13, 104);
+  font-size: 23px;
+  font-family: fantasy;
+  color: whitesmoke;
+  padding: 15px 25px;
 }
 
 footer a:hover {
-    background-color: rgb(0, 36, 194);
+  background-color: rgb(0, 36, 194);
 }
